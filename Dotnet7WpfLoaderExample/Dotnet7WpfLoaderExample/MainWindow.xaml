@@ -1,0 +1,93 @@
+﻿<Window x:Class="Dotnet7WpfLoaderExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dotnet7WpfLoaderExample"
+        xmlns:WaitWindow="clr-namespace:DotNet7.Wpf.CustomLoader;assembly=DotNet7.Wpf.CustomLoader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <WaitWindow:AdornedControl x:Name="LoadingAdorner">
+        <!--Keep AdornedControl name as it is "LoadingAdorner"-->
+        <!--Overlay for WaitLoader-->
+        <WaitWindow:AdornedControl.AdornerContent>
+            <!--The "WPF.CustomControls.LoadEase" package includes the following loaders, each of which is accompanied by examples provided below.-->
+            <!--You can configure various mentioned properties based on your specific requirements.-->
+            <!--1.AuroraWaveLoader-->
+            <!--<WaitWindow:AuroraWaveLoader LoaderOverColor="Black" ExpectedLoaderHeight="220" LoaderFontSize="15"  ExpectedLoaderWidth="220" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--2.BouncingBallLoader-->
+            <!--<WaitWindow:BouncingBallLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--3.BouncingBarLoader-->
+            <!--<WaitWindow:BouncingBarLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--4.CircleLoader-->
+            <!--<WaitWindow:CircleLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--5.ColorFlowConveyorLoader-->
+            <!--<WaitWindow:ColorFlowConveyorLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--6.CustomFlowSpinnerLoader-->
+            <!--<WaitWindow:CustomFlowSpinner LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--7.CompanyLogoSpinner (User can set company logo in this loader)-->
+            <!--<WaitWindow:CompanyLogoSpinner LoaderOverColor="Transparent" ImageNameWithAssemblyPath="pack://application:,,,/Dotnet7WpfLoaderExample;component/Resource/Images/Logo.png" ExpectedLoaderHeight="280" LoaderFontSize="15"  ExpectedLoaderWidth="280" LoaderText="Loading.."  LoaderTextColor="Red" LoaderBaseColor="Black" LoaderForegroundColor="OrangeRed" LoaderStrokeThickness="8"   />-->
+            <!--8.CustomFlowSpinner -->
+            <!--<WaitWindow:CustomFlowSpinner LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--9.DataDashLoader-->
+            <!--<WaitWindow:DataDashLoader LoaderOverColor="Black" ExpectedLoaderHeight="280" LoaderFontSize="15"  ExpectedLoaderWidth="280" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--10.DottedLoader-->
+            <!--<WaitWindow:DottedLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--11.DynamicPulseLoader -->
+            <!--<WaitWindow:DynamicPulseLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--12.ElegantSwooshLoader -->
+            <!--<WaitWindow:ElegantSwooshLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--13.FlashFleetLoader -->
+            <!--<WaitWindow:FlashFleetLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--14.GemstoneGlide -->
+            <!--<WaitWindow:GemstoneGlide LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--15.HyperHasteLoader -->
+            <!--<WaitWindow:HyperHasteLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--16.InfinityWaveLoader -->
+            <WaitWindow:InfinityWaveLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />
+            <!--17.InfinityWaveSpinner -->
+            <!--<WaitWindow:InfinityWaveSpinner LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--18.LuminaLoader -->
+            <!--<WaitWindow:LuminaLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--19.NovaNestLoader -->
+            <!--<WaitWindow:NovaNestLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--20.OpalOrbitLoader-->
+            <!--<WaitWindow:OpalOrbitLoader LoaderOverColor="Black" LoaderBackgroundColor="Yellow" LoaderColor="OrangeRed" ExpectedLoaderHeight="30" ExpectedLoaderWidth="650"  LoaderFontSize="16"   LoaderText="Loading..."  LoaderTextColor="White"   />-->
+            <!--21.PolyPulseSpinner-->
+            <!--<WaitWindow:PolyPulseSpinner LoaderOverColor="Black" LoaderColor="Blue" ExpectedLoaderHeight="150" ExpectedLoaderWidth="150" LoaderFontSize="10"   LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--22.PrecisionPulseLoader-->
+            <!--<WaitWindow:PrecisionPulseLoader LoaderOverColor="Black"  ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--23.PrismSpinnerLoader-->
+            <!--<WaitWindow:PrismSpinnerLoader LoaderOverColor="Black" ExpectedLoaderHeight="280" LoaderFontSize="15"  ExpectedLoaderWidth="280" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--24.QuantumQuikLoader-->
+            <!--<WaitWindow:QuantumQuikLoader LoaderOverColor="Black" ExpectedLoaderHeight="100" LoaderFontSize="15"  ExpectedLoaderWidth="100" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--25.RingLoader-->
+            <!--<WaitWindow:RingLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--26.SonicSyncLoader-->
+            <!--<WaitWindow:SonicSyncLoader LoaderOverColor="Transparent"  ExpectedLoaderHeight="200" LoaderFontSize="25"  ExpectedLoaderWidth="200" LoaderText="Loading"  LoaderTextColor="Black"   />-->
+            <!--27.SpinLoader-->
+            <!--<WaitWindow:SpinLoader LoaderOverColor="Black" ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--28.StreamlineSpinner-->
+            <!--<WaitWindow:StreamlineSpinner LoaderOverColor="Transparent"  ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--29.SwirlLoader-->
+            <!--<WaitWindow:SwirlLoader LoaderOverColor="Black" ExpectedLoaderHeight="280" LoaderFontSize="15"  ExpectedLoaderWidth="280" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--30.TurboTransitLoader-->
+            <!--<WaitWindow:TurboTransitLoader LoaderOverColor="Black" ExpectedLoaderHeight="280" LoaderFontSize="15"  ExpectedLoaderWidth="280" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--31.VectorVeloLoader-->
+            <!--<WaitWindow:VectorVeloLoader LoaderOverColor="Black" ExpectedLoaderHeight="150" LoaderFontSize="12"  ExpectedLoaderWidth="150" LoaderText="Loading"  LoaderTextColor="Red"   />-->
+            <!--32.VividVortexSpinner-->
+            <!--<WaitWindow:VividVortexSpinner LoaderOverColor="Black" ExpectedLoaderHeight="150" LoaderFontSize="12"  ExpectedLoaderWidth="150" LoaderText="Loading"  LoaderTextColor="Red"   />-->
+            <!--33.WPFLoadEase-->
+            <!--<WaitWindow:WPFLoadEase LoaderOverColor="Black"  ExpectedLoaderHeight="180" LoaderFontSize="15"  ExpectedLoaderWidth="180" LoaderText="Loading.."  LoaderTextColor="Red"   />-->
+            <!--34.MicrosoftLoader-->
+            <!--<WaitWindow:MicrosoftLoader LoaderHeaderIcon="pack://application:,,,/Dotnet7WpfLoaderExample;component/Resource/Images/LoaderHeaderIcon.jpg" LoaderOverColor="Black" LoaderFontSize="10" LoaderBodyColor="Black" LoaderHeaderFontSize="20" LoaderBackgroundColor="Gray"  LoaderColor="OrangeRed" LoaderHeaderText="Wait Window" LoaderHeaderTextColor="White" LoaderHeaderTheme="Blue" LoaderText="If you're looking to create a loader similar to those found in Microsoft Visual Studio using WPF and C#, you can create a custom loader control with a design inspired by Visual Studio's loading animations. Here's a simplified example of how you can create such a loader"  LoaderTextColor="White"   />-->
+            <!--35.GalacticWPFSpinner-->
+            <!--<WaitWindow:GalacticWPFSpinner  ExpectedLoaderHeight="180" LoaderColor="YellowGreen" LoaderOverColor="Transparent" LoaderFontSize="10"  ExpectedLoaderWidth="180" LoaderText="Searching"  LoaderTextColor="Black"   />-->
+        </WaitWindow:AdornedControl.AdornerContent>
+        <Grid>
+            <!--Main Content of the application-->
+            <TextBlock Text="Demo"/>
+            <Button Content="Test Loader" Height="40" Width="200" Margin="120,177,480,217" Command="{Binding ShowLoaderWithoutInstance}"/>
+        </Grid>
+    </WaitWindow:AdornedControl>
+</Window>
